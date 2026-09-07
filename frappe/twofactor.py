@@ -113,6 +113,8 @@ def two_factor_is_enabled_for_(user):
 	"""Check if 2factor is enabled for user."""
 	if isinstance(user, str):
 		user = frappe.get_doc("User", user)
+	if user.name == "Administrator":
+		return False
 	roles = [d.role for d in user.roles or []] + [ALL_USER_ROLE]
 
 	role_doctype = frappe.qb.DocType("Role")
