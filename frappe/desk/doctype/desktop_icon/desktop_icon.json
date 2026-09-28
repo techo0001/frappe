@@ -147,7 +147,7 @@
    "fieldname": "bg_color",
    "fieldtype": "Select",
    "label": "Background Color",
-   "options": "gray\nblue"
+   "options": "gray\nblue\ngreen"
   }
  ],
  "links": [],

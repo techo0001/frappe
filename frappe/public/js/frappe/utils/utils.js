@@ -1394,6 +1394,7 @@ Object.assign(frappe.utils, {
 	desktop_pallete: {
 		blue: "#0289F7",
 		gray: "#7B808A",
+		green: "#06B58B",
 	},
 	icon(
 		icon_name,

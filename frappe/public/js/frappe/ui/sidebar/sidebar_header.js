@@ -308,7 +308,7 @@ frappe.ui.SidebarHeader = class SidebarHeader {
 			this.header_icon = `<img src=${this.header_icon}></img>`;
 		} else if (this.sidebar.sidebar_data) {
 			this.header_icon = this.sidebar.sidebar_data.header_icon;
-			this.header_icon = frappe.utils.desktop_icon(this.sidebar.sidebar_title, "gray", "sm");
+			this.header_icon = frappe.utils.desktop_icon(this.sidebar.sidebar_title, this.sidebar.sidebar_title === "Solar" ? "green" : "gray", "sm");
 		} else {
 			this.header_icon = this.get_default_icon();
 			this.header_icon = `<img src=${this.header_icon}></img>`;
